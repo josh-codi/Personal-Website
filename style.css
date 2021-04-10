@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "ubuntu",sans-serif;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+@media only screen and (max-width:730px){
+    .navbar-menu{
+        display: none;
+    }
+}  
+.navbar{
+
+    position:fixed;
+    background-color: ;
+    width:100%;
+    padding:30px;
+    transition: .3s linear;
+    
+}
+
+.inner-width{
+    max-width:1300px;
+    margin: auto;
+    padding:0 40px;
+}
+
+.logo{
+    border-radius: 50%;
+    width:54px;
+    height:54px;
+    background:url(profilePicture1.png) no-repeat ;
+    background-size: contain;
+    background-position: center;
+    border:3px solid #00d0ff;
+}
+.nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    margin: auto;
+    /*padding:0 90px 0 90px;   */ 
+    background-color: transparent;
+    transition: .3s linear;
+}
+.navbar-menu{
+    padding:15px 15px;
+    border-bottom:1px solid #00d0ff;
+    border-top:1px solid #00d0ff;;
+}
+.navbar-menu a{
+    color: #fff;
+    font-size: 18px;
+    font-weight:500;
+    margin-left: 40px;
+    transition: .2s linear;
+}
+.nav a:hover{
+    color: #00d0ff;
+}
+#home{
+    height:100vh;
+    border:2px solid #00d0ff;border-top:none;border-bottom:none;
+    background:url(profilePicture.png) no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;overflow-y: scroll;
+}
+#home .inner-width{
+    margin-top:-30px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 1100px;
+    text-align:center;
+    background-color: rgb(0,0,0, .8);
+    border-bottom:2px solid #00d0ff;
+    border-right:2px solid #00d0ff;
+    border-left:2px solid #00d0ff;
+    overflow-y: hidden;
+}
+#home .content{
+    width:100%;
+    color: #fff;
+    
+}
+#home .content h1::after{
+    content:" Odame Joshua Asiamah  ";
+    font-size: 2em;
+    color:#00d0ff;
+    animation:textanim 15s linear infinite;
+}
+@keyframes textanim{
+    25%{
+        content:" A Computer Engineer";
+    }
+    50%{
+        content: " A Programmer";
+    }
+    75%{
+        content:" A Developer";
+    }
+}
+
+.social-media a {
+    color: #fff;
+    font-size:22px;
+    margin:0 10px;
+    transition: .2s linear;
+}
+.social-media a:hover{
+    color:#00d0ff;
+    transition: 1s linear;
+}
+#home .buttons{
+    margin-top: 60px;
+}
+#home .buttons a{
+    display:inline-block;
+    margin: 15px 30px;
+    color: #00d0ff;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #00d0ff;
+    padding: 14px 0;
+    border-radius:6px;
+    transition: .2s linear;
+    text-shadow:3px 2px 8px black;
+}
+#home .buttons a:hover,#home .buttons a:nth-child(2){
+    background-color:#00d0ff;
+    color:white;
+}
+#home .buttons a:nth-child(2):hover{
+    background:transparent;
+    color:#00d0ff;
+}
+.footer{
+    color:white;
+    padding:10px;
+    display: flex;
+    
+    background:rgb(0,0,0, .9);
+}
+.footer button{
+    position: relative;left:1000px;
+    padding:5px;
+    background-color: #00d0ff;
+}
+.footer #designed-by{
+    padding:5px;
+}
+.sym i{
+    color:#00d0ff;
+    
+    margin:0 50px 0 50px;
+}
+
+
+.preloader{
+    position: fixed;
+    top:0;left:0;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(lightblue,lime,yellow);
+}
+.disapper{
+    animation:vanish 3s forwards;
+}
+@keyframes vanish{
+    900%{
+        opacity:0;
+        visibility: hidden;
+    }
+    100%{
+        display: none;visibility: hidden;
+    }
+}
+.more{
+    text-shadow:1px 1px 3px black;
+    width: fit-content;
+    padding:10px 15px 10px 15px;
+    color:#00d0ff;
+    background-color:transparent;
+    border-radius: 4px;
+    border:1px solid #01bee9;
+    margin:auto;
+    font-size: 1.3em;
+    outline: none;
+    
+}
+.more:hover{
+    background-color:#00d0ff;
+    color:#fff;
+    cursor:pointer;
+}
